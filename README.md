@@ -37,6 +37,6 @@ git clone https://github.com/ravirajkarn/Utility.git
 cd Utility
 conan install --build=missing -s build_type=Release
 cmake -G "Ninja" -S . -B ./build/Release -DCMAKE_BUILD_TYPE=release --preset conan-release
-cmake --build /build/Release
+cmake --build ./build/Release
 ```
 
