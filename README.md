@@ -35,7 +35,8 @@ But, I did some coding to achieve this task. Feel free to have a look and I hope
 ```bash
 git clone https://github.com/ravirajkarn/Utility.git
 cd Utility
-conan install --build=missing -s build_type=release
-cmake -G "Ninja" -S . -B ./build/release -DCMAKE_BUILD_TYPE=release --preset conan-release
+conan install --build=missing -s build_type=Release
+cmake -G "Ninja" -S . -B ./build/Release -DCMAKE_BUILD_TYPE=release --preset conan-release
+cmake --build /build/Release
 ```
 
