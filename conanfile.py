@@ -22,6 +22,8 @@ class mvxmlRecipe(ConanFile):
 
     def requirements(self):
         self.requires("rapidxml/1.13")
+        self.requires("fmt/12.1.0")
+        self.requires("cli11/2.6.0")
 
     def layout(self):
         cmake_layout(self)
